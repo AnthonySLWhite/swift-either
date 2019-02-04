@@ -1,0 +1,48 @@
+{
+  "name": "swift-either",
+  "version": "0.1.0",
+  "description": "Utility for handling errors",
+  "main": "dist/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonySLWhite/swift-either.git"
+  },
+  "author": "Anthony White",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnthonySLWhite/swift-either/issues"
+  },
+  "homepage": "https://github.com/AnthonySLWhite/swift-either#readme",
+  "scripts": {
+    "start": "nps",
+    "build": "nps build"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "nps": "^5.9.3",
+    "nps-utils": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-rewire": "^1.2.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "6.24.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-google": "^0.12.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-problems": "^2.0.0",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "expect": "^24.0.0",
+    "mocha": "^5.2.0",
+    "parcel-bundler": "^1.11.0",
+    "prettier": "^1.16.4",
+    "rewire": "^4.0.1",
+    "supertest": "^3.4.2"
+  }
+}
