@@ -1,6 +1,6 @@
 {
   "name": "swift-either",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Utility for handling errors",
   "main": "dist/app.js",
   "repository": {
