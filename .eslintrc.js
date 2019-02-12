@@ -55,7 +55,7 @@ module.exports = {
     'fp/no-nil': 0,
     'fp/no-proxy': 2,
     'fp/no-rest-parameters': 2,
-    'fp/no-throw': 2,
+    'fp/no-throw': 0,
     'fp/no-valueof-field': 2,
     'fp/no-mutation': 0,
     'fp/no-mutating-assign': 1,

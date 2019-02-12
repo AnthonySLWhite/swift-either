@@ -18,6 +18,7 @@ const swiftEither = (withErr = 0) => {
    */
   const either = callback => {
     let calledLeft = 0;
+    let errCB = null;
     /**
      * ### If things don't go right then
      *
@@ -25,7 +26,7 @@ const swiftEither = (withErr = 0) => {
      * @param {function} [errorCallback] - **Optional** Callback
      */
     const left = (msg, errorCallback) => {
-      errorCallback ? errorCallback(msg) : 0;
+      errorCallback ? (errCB = errorCallback) : 0;
       withErr ? console.error(msg) : 0;
       calledLeft = 1;
       throw msg;
@@ -38,7 +39,10 @@ const swiftEither = (withErr = 0) => {
     } catch (e) {
       // If it was a Handled Error
       if (calledLeft) {
-        return e;
+        if (!errCB) {
+          return e;
+        }
+        return errCB(e);
       }
       // If it was an Unhandled Error
       const msg = `Unhandled Error: 
